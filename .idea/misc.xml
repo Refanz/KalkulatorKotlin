@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Program/Kotlin/Aplikasi/Kalkulator Sederhana/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22552083333333334" />
+        <entry key="..\:/Program/Kotlin/Aplikasi/Kalkulator Sederhana/app/src/main/res/drawable/button_background.xml" value="0.22552083333333334" />
+        <entry key="..\:/Program/Kotlin/Aplikasi/Kalkulator Sederhana/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22552083333333334" />
         <entry key="..\:/Program/Kotlin/Aplikasi/Kalkulator Sederhana/app/src/main/res/layout/activity_main.xml" value="0.18" />
       </map>
     </option>

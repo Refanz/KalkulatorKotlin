@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/almostBlack"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -19,8 +20,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:lines="2"
+            android:text=""
             android:maxLines="2"
-            android:text="@string/hello_world"
             android:textAlignment="textEnd"
             android:textColor="@color/white"
             android:textSize="25sp"
@@ -34,17 +35,112 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:lines="1"
+            android:text=""
             android:maxLines="1"
-            android:text="@string/hello_world"
             android:textAlignment="textEnd"
             android:textColor="@color/white"
             android:textSize="40sp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
-
+            app:layout_constraintRight_toRightOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <LinearLayout
+        style="@style/tombolBaris">
+
+        <Button
+            style="@style/tombolAksi"
+            android:text="AC"
+            android:onClick="aksiHapusSemua"
+            android:textColor="@color/red"/>
+        <Button
+            style="@style/tombolAksi"
+            android:text="DEL"
+            android:onClick="aksiHapusSekali"
+            android:textColor="@color/red"/>
+        <Button
+            style="@style/tombolAngka"
+            android:text=""/>
+        <Button
+            style="@style/tombolOperator"
+            android:text="/"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/tombolBaris">
+
+        <Button
+            style="@style/tombolAngka"
+            android:text="7"/>
+        <Button
+            style="@style/tombolAngka"
+            android:text="8"/>
+        <Button
+            style="@style/tombolAngka"
+            android:text="9"/>
+        <Button
+            style="@style/tombolOperator"
+            android:text="x"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/tombolBaris">
+
+        <Button
+            style="@style/tombolAngka"
+            android:text="4"/>
+        <Button
+            style="@style/tombolAngka"
+            android:text="5"/>
+        <Button
+            style="@style/tombolAngka"
+            android:text="6"/>
+        <Button
+            style="@style/tombolOperator"
+            android:text="-"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/tombolBaris">
+
+        <Button
+            style="@style/tombolAngka"
+            android:text="1"/>
+        <Button
+            style="@style/tombolAngka"
+            android:text="2"/>
+        <Button
+            style="@style/tombolAngka"
+            android:text="3"/>
+        <Button
+            style="@style/tombolOperator"
+            android:text="+"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/tombolBaris">
+
+        <Button
+            style="@style/tombolAngka"
+            android:text="."/>
+        <Button
+            style="@style/tombolAngka"
+            android:text="0"/>
+
+        <Button
+            style="@style/tombolAngka"
+            android:layout_weight="2"
+            android:background="@color/orange"
+            android:text="="
+            android:textSize="30sp"
+            android:onClick="aksiHitung"/>
+
+    </LinearLayout>
 
 </LinearLayout>
