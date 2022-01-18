@@ -24,7 +24,7 @@
             android:maxLines="2"
             android:textAlignment="textEnd"
             android:textColor="@color/white"
-            android:textSize="25sp"
+            android:textSize="30sp"
             app:layout_constraintBottom_toTopOf="@+id/resultsTV"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -135,7 +135,7 @@
 
         <Button
             style="@style/tombolAngka"
-            android:layout_weight="2"
+            android:layout_weight="0.7"
             android:background="@color/orange"
             android:text="="
             android:textSize="30sp"
